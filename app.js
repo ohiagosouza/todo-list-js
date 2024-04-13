@@ -1,5 +1,6 @@
 const express = require("express");
 const checklistsRouter = require("./src/routes/checklist.js");
+require("./config/database.js");
 
 const app = express();
 app.use(express.json()); //Indica que o middleware deve ser usado, nesse caso verifica se há um body no JSON.
