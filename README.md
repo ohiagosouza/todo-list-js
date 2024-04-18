@@ -1,41 +1,41 @@
 # To-Do List App
 
-Este é o Backend de uma lista de tarefas criado com JavaScript.
+Este projeto é uma API de lista de tarefas.
+
+## Requisitos
+
+- Conhecimento sobre Javascript, APIs
+- Node.js
+- MongoDB
+- Mongoose
 
 ## Funcionalidades
 
-- Adicionar novas tarefas à lista.
-- Marcar tarefas como concluídas.
+- Consultar tarefas;
+- Adicionar novas tarefa;
+- Atualizar tarefas usando o ID;
 - Excluir tarefas da lista.
 
 ## Como usar
 
 1. Clone este repositório para o seu ambiente local.
-   ```
-   git clone https://github.com/ohiagosouza/todo-list-js.git
-   ```
-2. Digite o código.
-
-   ```
-   npm run dev
-   ```
-
-3. Abra o `Postman` ou outra plataforma de API
-4. Cole o endereço `localhost:3000/checklists` no campo URL e mude o método para POST
-5. Clique em **body**, depois marque a opção **raw** e mude o tipo para _json_.
-6. Adicione a estrutura do novo Checklist
-7. Suas tarefas serão salvas localmente, então você pode fechar e reabrir o aplicativo sem perder suas tarefas.
+2. Tenha um banco de dados todo-list já criado
+3. Digite o código `npm run dev`.
+4. Abra o `Postman` ou outro software para testar APIs
+5. Faça requisições através do endereço `localhost:3000/checklists`
+6. Requisições aceitas GET, POST, PUT ou DELETE.
 
 ## Estrutura do Projeto
 
-- `index.html`: Arquivo HTML principal.
-- `style.css`: Estilos CSS para o aplicativo.
-- `script.js`: Código JavaScript para funcionalidades da lista de tarefas.
+- `app.js`: Arquivo Javascript principal.
+- `src/models/`: Modelo de como o banco é construído.
+- `src/routes/checklist.js`: Rotas da API.
+- `config/database.js`: Configuração de conexão com o banco de dados
 
 ## Contribuindo
 
 Se você quiser contribuir com melhorias para este aplicativo, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## Licença
+## Author
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+[Hiago Souza](https://linkedin.com/ohiagosouza)
